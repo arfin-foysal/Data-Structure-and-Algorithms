@@ -1,6 +1,6 @@
-// babblesorte
-const arr = [1, 5, 21, 5, 3, 56, 56, 52, 356,80, 855];
+const arr = [1, 5, 21, 5, 3, 56, 56, 52, 356, 80, 855];
 
+// babblesorte
 // function babblesorte(arra) {
 
 //   for (let i = 0; i < arra.length - 1; i++) {
@@ -15,6 +15,9 @@ const arr = [1, 5, 21, 5, 3, 56, 56, 52, 356,80, 855];
 // babblesorte(arr);
 // console.log("[sorted]", arr);
 // console.log(arr);
+
+
+// insertionSort
 
 // function insertionSort(inputArr) {
 //     let n = inputArr.length;
@@ -35,6 +38,8 @@ const arr = [1, 5, 21, 5, 3, 56, 56, 52, 356,80, 855];
 // insertionSort(arr)
 
 // console.log(arr);
+
+// selectionSort
 
 function selectionSort(inputArr) { 
     let n = inputArr.length;
@@ -60,3 +65,33 @@ function selectionSort(inputArr) {
 selectionSort(arr)
 
 console.log(arr);
+
+// binarySearch
+
+// function binarySearch(sortedArray, key){
+//   let start = 0;
+//   let end = sortedArray.length - 1;
+
+//   while (start <= end) {
+//       let middle = Math.floor((start + end) / 2);
+//       if (sortedArray[middle] === key) {
+//           return middle;
+//       } else if (sortedArray[middle] < key) {
+//           start = middle + 1;
+//       } else {
+//           end = middle - 1;
+//       }
+//   }
+// // key wasn't found
+//   return -1;
+// }
+
+// linearSearch
+function linearSearch(arr, key){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === key){
+            return i
+        }
+    }
+    return -1
+}
